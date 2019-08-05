@@ -6,8 +6,8 @@ Promise feature for dartlang, reference from javascript Promise.
 |Feature|Dart|ES Promise|
 |--|--|--|
 |then|promise.then|promise.then|
-|catch|promise.catchError(`catch` is a keyword in dart, not allowed as a method, use `catchError` instead)|Promise.catch|
-|finally|promise.always(`finally` is a keyword in dart, not allowed as a method, use `always` instead)|Promise.finally|
+|catch|promise.catchError(`catch` is a keyword in dart, not allowed as a method, use `catchError` instead)|promise.catch|
+|finally|promise.always(`finally` is a keyword in dart, not allowed as a method, use `always` instead)|promise.finally|
 |resolve|Promise.resolve|Promise.resolve|
 |reject|Promise.reject|Promise.reject|
 |race|Promise.race|Promise.race|
