@@ -5,11 +5,11 @@ Promise feature for dartlang, reference from javascript Promise.
 
 |Feature|Dart|ES Promise|
 |--|--|--|
+|then|promise.then|promise.then|
+|catch|promise.catchError(`catch` is a keyword in dart, not allowed as a method, use `catchError` instead)|Promise.catch|
+|finally|promise.always(`finally` is a keyword in dart, not allowed as a method, use `always` instead)|Promise.finally|
 |resolve|Promise.resolve|Promise.resolve|
 |reject|Promise.reject|Promise.reject|
-|then|promise.then|promise.then|
-|catch|Promise.catchError(`catch` is a keyword in dart, not allowed as a method, use `catchError` instead)|Promise.catch|
-|finally|Promise.always(`finally` is a keyword in dart, not allowed as a method, use `always` instead)|Promise.finally|
 |race|Promise.race|Promise.race|
 |all|Promise.all|Promise.all|
 
