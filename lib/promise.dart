@@ -2,7 +2,7 @@ import 'dart:async';
 
 enum PromiseStatus { PENDING, RESOLVED, REJECTED }
 
-typedef Func = Function(dynamic val);
+typedef Func(Object val);
 
 class Promise {
   PromiseStatus _status = PromiseStatus.PENDING;
@@ -23,7 +23,7 @@ class Promise {
     return this._status;
   }
 
-  Promise(Function excutor(dynamic resolve(val), dynamic reject(val))) {
+  Promise(dynamic excutor(dynamic resolve(val), dynamic reject(val))) {
     if (!(excutor is Function)) {
       throw new AssertionError('Promise resolver $excutor is not a function');
     }
